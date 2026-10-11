@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en" class="is-loading">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Naimat Ullah Khan — Software Engineer</title>
+  <meta name="description" content="Naimat Ullah Khan — Software Engineer building Python backends, full-stack platforms and production AI/RPA automation agents.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='4' width='14' height='3' rx='1.5' fill='%23ff488b'/%3E%3Crect x='8' y='10.5' width='14' height='3' rx='1.5' fill='%23ff488b'/%3E%3Crect x='2' y='17' width='14' height='3' rx='1.5' fill='%23ff488b'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-mark">
+    <span></span><span></span><span></span>
+  </div>
+</div>
+
+<!-- ============ 3D BACKGROUND ============ -->
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="bg-fallback" aria-hidden="true"></div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <svg class="cursor-svg" viewBox="0 0 100 100">
+    <circle class="cursor-ring" cx="50" cy="50" r="48"></circle>
+    <circle class="cursor-progress" cx="50" cy="50" r="48"></circle>
+  </svg>
+  <div class="cursor-content"><span></span><span></span></div>
+  <div class="cursor-label">Click and hold</div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr" data-hold-hide>
+  <a class="brand" href="#top" aria-label="Naimat Ullah Khan — home">
+    <span class="brand-mark"><i></i><i></i><i></i></span>
+    <span class="brand-word">Naimat Ullah Khan</span>
+  </a>
+  <nav class="nav-pill" aria-label="Primary">
+    <a class="nav-link" href="#about"><span class="scr">About</span></a>
+    <a class="nav-link" href="#experience"><span class="scr">Experience</span></a>
+    <a class="nav-link" href="#projects"><span class="scr">Projects</span></a>
+    <a class="nav-link" href="#skills"><span class="scr">Skills</span></a>
+    <a class="nav-link" href="#education"><span class="scr">Education</span></a>
+    <span class="nav-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </nav>
+  <div class="hdr-cta">
+    <a class="btn btn-light" href="assets/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="btn-bg"></span><span class="scr">Resume</span></a>
+    <a class="btn btn-pink" href="#contact"><span class="btn-bg"></span><span class="scr">Hire me</span></a>
+  </div>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu"><span class="scr">Menu</span><span class="nav-dots"><i></i><i></i><i></i><i></i></span></button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <nav>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+    <a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="mobile-menu-cta">
+    <a class="btn btn-light" href="assets/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="scr">Resume</span></a>
+    <a class="btn btn-pink" href="#contact"><span class="scr">Hire me</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" data-theme="dark" data-scene="ribbons">
+    <div class="hero-inner wrap" data-hold-hide>
+      <h1 class="split h-2xl hero-title">Backend systems and AI&nbsp;agents that <span class="grad">run</span> while you sleep</h1>
+      <div class="hero-side" data-cursor-hide>
+        <p>Software Engineer with 3+ years building Python backends, full-stack platforms and production RPA agents — automating healthcare workflows across 50+ insurance payer portals.</p>
+        <div class="btn-row">
+          <a class="btn btn-pink" href="#projects"><span class="btn-bg"></span><span class="scr">View projects</span></a>
+          <a class="btn btn-ghost" href="#contact"><span class="btn-bg"></span><span class="scr">Get in touch</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hold-words" aria-hidden="true">
+      <span class="hold-word hw-1">Automate</span>
+      <span class="hold-word hw-2">Integrate</span>
+      <span class="hold-word hw-3">Scale</span>
+    </div>
+    <div class="hold-hint" aria-hidden="true">Release to return</div>
+    <button class="hold-mobile" id="holdMobile" aria-label="Play the intro animation">
+      <svg viewBox="0 0 24 24" class="i-play"><path d="M7 4.5v15l12-7.5z"/></svg>
+      <svg viewBox="0 0 24 24" class="i-stop"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg>
+    </button>
+
+    <div class="hero-rail wrap" data-hold-hide>
+      <div class="rail">
+        <div class="rail-track">
+          <span>Python</span><span>FastAPI</span><span>Django</span><span>React</span><span>Odoo 18</span><span>Playwright</span><span>Robocorp</span><span>OpenAI GPT-4o</span><span>AWS</span><span>Docker</span><span>PostgreSQL</span><span>Redis</span>
+        </div>
+      </div>
+    </div>
+    <div class="dots-area hero-dots"><canvas class="dots"></canvas></div>
+  </section>
+
+  <!-- ============ ABOUT / WHY (LIGHT PANEL) ============ -->
+  <section class="panel panel-light" id="about" data-theme="light">
+    <div class="wrap">
+      <div class="intro-grid">
+        <p class="intro-small">Production automation without the production chaos.</p>
+        <h2 class="split h-xl">Built for teams, <span class="grad">shipping to production</span></h2>
+      </div>
+
+      <div class="why">
+        <div class="why-left">
+          <div class="why-sticky">
+            <p class="label">Why work with me</p>
+            <ol class="why-list">
+              <li class="is-active" data-i="0">50+ Portals Automated</li>
+              <li data-i="1">AI + OCR Pipelines</li>
+              <li data-i="2">Fault-Tolerant Bots</li>
+              <li data-i="3">Microservice Architecture</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="why-right">
+          <!-- card 0: bars -->
+          <article class="why-card" data-i="0">
+            <div class="vis vis-dark vis-bars">
+              <div class="seg" data-seg>
+                <button class="seg-btn is-active" data-tab="reach">Reach</button>
+                <button class="seg-btn" data-tab="delivery">Delivery</button>
+                <span class="seg-ind"></span>
+              </div>
+              <div class="bars-box">
+                <div class="bars" data-set="reach">
+                  <div class="bar"><span class="bar-l">Insurance payer portals</span><span class="bar-t"><i data-w="1"></i></span><b data-n="50" data-s="+">0</b></div>
+                  <div class="bar"><span class="bar-l">Banking portals</span><span class="bar-t"><i data-w=".18"></i></span><b data-n="9">0</b></div>
+                  <div class="bar"><span class="bar-l">Vision payer portals</span><span class="bar-t"><i data-w=".1"></i></span><b data-n="5">0</b></div>
+                  <div class="bar"><span class="bar-l">Production RPA agents</span><span class="bar-t"><i data-w=".08"></i></span><b data-n="4">0</b></div>
+                </div>
+                <div class="bars" data-set="delivery" hidden>
+                  <div class="bar"><span class="bar-l">Unit test coverage</span><span class="bar-t"><i data-w=".9"></i></span><b data-n="90" data-s="%+">0</b></div>
+                  <div class="bar"><span class="bar-l">REST APIs (Odoo POS)</span><span class="bar-t"><i data-w=".44"></i></span><b data-n="40" data-s="+">0</b></div>
+                  <div class="bar"><span class="bar-l">Claim scrubbing rules</span><span class="bar-t"><i data-w=".33"></i></span><b data-n="30" data-s="+">0</b></div>
+                  <div class="bar"><span class="bar-l">Batch size per run</span><span class="bar-t"><i data-w=".22"></i></span><b data-n="20">0</b></div>
+                </div>
+              </div>
+            </div>
+            <h3>Automation at real scale.</h3>
+            <p>Four production healthcare RPA agents and a shared payer-portal library for Thoughtful.ai — prior authorization, payment posting and claims across 50+ payer portals, 9 banking portals and desktop EHR systems.</p>
+          </article>
+
+          <!-- card 1: AI pipeline -->
+          <article class="why-card" data-i="1">
+            <div class="vis vis-light vis-flow">
+              <span class="vis-tag">Pipeline : auth-letter.pdf</span>
+              <div class="flow">
+                <div class="flow-node"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z M14 2v6h6"/></svg><span>PDF letter</span></div>
+                <div class="flow-line"><i></i></div>
+                <div class="flow-node"><svg viewBox="0 0 24 24"><path d="M3 7V3h4M17 3h4v4M21 17v4h-4M7 21H3v-4M7 9h10M7 12h10M7 15h6"/></svg><span>AWS Textract</span></div>
+                <div class="flow-line"><i></i></div>
+                <div class="flow-node is-pink"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z"/></svg><span>GPT-4o</span></div>
+              </div>
+              <pre class="json" data-json></pre>
+            </div>
+            <h3>AI where OCR alone isn't enough.</h3>
+            <p>AWS Textract OCR combined with OpenAI GPT-4o structured-output parsing to pull reliable data out of authorization letters — validated with Pydantic before it ever touches an EHR.</p>
+          </article>
+
+          <!-- card 2: terminal -->
+          <article class="why-card" data-i="2">
+            <div class="vis vis-dark vis-term">
+              <span class="vis-tag">Terminal</span>
+              <div class="term" data-term></div>
+            </div>
+            <h3>Parallel, fault-tolerant bots.</h3>
+            <p>Robocorp work items, batched subprocesses and Redis-based distributed locking with atomic Lua scripts — so parallel bots can safely share portal credentials and recover from failures.</p>
+          </article>
+
+          <!-- card 3: microservices -->
+          <article class="why-card" data-i="3">
+            <div class="vis vis-light vis-arch">
+              <span class="vis-tag">OMS : 6 services</span>
+              <svg class="arch" viewBox="0 0 400 260" role="img" aria-label="Architecture: Nginx gateway routing to six FastAPI microservices connected by Redis pub/sub">
+                <defs>
+                  <path id="p0" d="M200 46 C200 70 60 70 60 100"/>
+                  <path id="p1" d="M200 46 C200 70 116 70 116 100"/>
+                  <path id="p2" d="M200 46 C200 70 172 70 172 100"/>
+                  <path id="p3" d="M200 46 C200 70 228 70 228 100"/>
+                  <path id="p4" d="M200 46 C200 70 284 70 284 100"/>
+                  <path id="p5" d="M200 46 C200 70 340 70 340 100"/>
+                  <path id="bus" d="M40 176 H360"/>
+                </defs>
+                <g class="arch-lines">
+                  <use href="#p0"/><use href="#p1"/><use href="#p2"/><use href="#p3"/><use href="#p4"/><use href="#p5"/>
+                  <path d="M60 126 V176 M116 126 V176 M172 126 V176 M228 126 V176 M284 126 V176 M340 126 V176"/>
+                  <use href="#bus" class="bus"/>
+                  <path d="M200 176 V206"/>
+                </g>
+                <rect class="n-gw" x="150" y="20" width="100" height="26" rx="4"/><text x="200" y="37">Nginx · JWT</text>
+                <g class="n-svc">
+                  <rect x="34" y="100" width="52" height="26" rx="4"/><text x="60" y="117">auth</text>
+                  <rect x="90" y="100" width="52" height="26" rx="4"/><text x="116" y="117">hr</text>
+                  <rect x="146" y="100" width="52" height="26" rx="4"/><text x="172" y="117">attend</text>
+                  <rect x="202" y="100" width="52" height="26" rx="4"/><text x="228" y="117">payroll</text>
+                  <rect x="258" y="100" width="52" height="26" rx="4"/><text x="284" y="117">account</text>
+                  <rect x="314" y="100" width="52" height="26" rx="4"/><text x="340" y="117">projects</text>
+                </g>
+                <text class="t-bus" x="372" y="180">redis pub/sub</text>
+                <rect class="n-db" x="130" y="206" width="140" height="28" rx="4"/><text x="200" y="224">PostgreSQL · per-tenant</text>
+                <g class="packets">
+                  <circle r="3"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#p0"/></animateMotion></circle>
+                  <circle r="3"><animateMotion dur="2.2s" begin=".7s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion></circle>
+                  <circle r="3"><animateMotion dur="2.2s" begin="1.3s" repeatCount="indefinite"><mpath href="#p5"/></animateMotion></circle>
+                  <circle r="3"><animateMotion dur="2.2s" begin="1.8s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
+                  <circle r="3" class="pk"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#bus"/></animateMotion></circle>
+                  <circle r="3" class="pk"><animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#bus"/></animateMotion></circle>
+                </g>
+              </svg>
+            </div>
+            <h3>Multi-tenant microservices.</h3>
+            <p>Helped migrate a Django REST monolith to 6 FastAPI microservices with per-tenant PostgreSQL schemas, shared JWT/tenant verification and Redis pub/sub — shipped with Docker, Nginx and GitLab CI/CD to AWS.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE (DARK, SPHERE) ============ -->
+  <section class="sec-dark" id="experience" data-theme="dark" data-scene="sphere">
+    <div class="dots-area"><canvas class="dots"></canvas></div>
+    <div class="wrap exp-grid">
+      <div class="exp-left">
+        <p class="label label-dark">Experience</p>
+        <h2 class="split h-xl">Shipping <span class="grad">production</span> automation since 2024</h2>
+        <div class="exp-company">
+          <strong>Enigmatix Pvt Ltd</strong>
+          <span>Backend Developer &amp; Automation Engineer</span>
+          <span class="mono">Mar 2024 — Present · Bahawalpur, PK</span>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-pink" href="#contact" data-mail><span class="btn-bg"></span><span class="scr">Email me</span></a>
+          <a class="btn btn-ghost" href="assets/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="btn-bg"></span><span class="scr">Resume</span></a>
+        </div>
+      </div>
+      <ul class="exp-list">
+        <li><h4><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>Healthcare RPA agents</h4><p>Built and maintained 4 production agents and a shared payer-portal library for Thoughtful.ai, automating revenue-cycle workflows across 50+ payer portals, 9 banking portals and NextGen / Acuity Logic.</p></li>
+        <li><h4><svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z"/></svg>AI document extraction</h4><p>Combined AWS Textract OCR with GPT-4o structured-output parsing to extract data from authorization letters when OCR alone wasn't enough.</p></li>
+        <li><h4><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>Distributed execution</h4><p>Parallel, fault-tolerant bot runs with Robocorp work items, batched subprocesses and Redis-based distributed locking for shared credentials.</p></li>
+        <li><h4><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Multi-tenant SaaS</h4><p>Full-stack features with FastAPI microservices, PostgreSQL, Redis, Celery and React/TypeScript micro-frontends.</p></li>
+        <li><h4><svg viewBox="0 0 24 24"><path d="M4 7h16l-1.5 12h-13z M8 7V5a4 4 0 0 1 8 0v2"/></svg>Odoo 18 &amp; POS</h4><p>Custom Odoo 18 modules and 40+ REST APIs powering React/TypeScript point-of-sale apps for retail, restaurant and pharmacy clients.</p></li>
+        <li><h4><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Security &amp; integrations</h4><p>JWT, TOTP/2FA and RBAC; GraphQL/REST payer APIs, EDI 835, SFTP, Microsoft 365, Google APIs, Slack and AWS S3.</p></li>
+        <li><h4><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>Quality &amp; delivery</h4><p>Pytest, Mypy, Ruff and pre-commit; shipped through Bitbucket Pipelines and GitLab CI/CD with Docker-based deployments.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS (DARK, SPHERE) ============ -->
+  <section class="sec-dark sec-projects" id="projects" data-theme="dark" data-scene="sphere">
+    <div class="dots-area"><canvas class="dots"></canvas></div>
+    <div class="wrap">
+      <h2 class="split h-lg center">Built by Naimat</h2>
+      <div class="seg seg-center" data-seg data-target="projects">
+        <button class="seg-btn is-active" data-tab="ai">AI Agents</button>
+        <button class="seg-btn" data-tab="fs">Full Stack</button>
+        <span class="seg-ind"></span>
+      </div>
+      <div class="proj-grid" data-panel="ai"></div>
+      <div class="proj-grid" data-panel="fs" hidden></div>
+    </div>
+  </section>
+
+  <!-- ============ INDUSTRIES (LIGHT PANEL) ============ -->
+  <section class="panel panel-light" id="industries" data-theme="light">
+    <div class="wrap">
+      <h2 class="split h-xl">Powering real workflows <span class="grad">across industries</span></h2>
+      <div class="car-head">
+        <div class="car-arrows">
+          <button class="car-btn" data-dir="-1" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button class="car-btn" data-dir="1" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <div class="car" id="car"></div>
+
+      <!-- ============ SKILLS ============ -->
+      <div class="skills" id="skills">
+        <p class="label">Skills</p>
+        <div class="skill-grid" id="skillGrid"></div>
+      </div>
+
+      <!-- ============ EDUCATION ============ -->
+      <div class="edu" id="education">
+        <div class="edu-head">
+          <h2 class="h-md">Education &amp; certifications</h2>
+          <a class="btn btn-white btn-sm" href="assets/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="btn-bg"></span><span class="scr">Full resume</span></a>
+        </div>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <div class="edu-art a1"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z M6 11v5c3 2.5 9 2.5 12 0v-5 M22 9v6"/></svg></div>
+            <div class="edu-body"><p class="mono-sm">Feb 2022 — Feb 2026 <span>Degree</span></p><h3>BS Information Technology</h3><p>The Islamia University of Bahawalpur · CGPA 3.2 / 4.0</p></div>
+          </article>
+          <article class="edu-card">
+            <div class="edu-art a2"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 8 5-3 5 3-1.5-8 M9.5 9l1.8 1.8L15 7.5"/></svg></div>
+            <div class="edu-body"><p class="mono-sm">Sema4.ai <span>Certification</span></p><h3>Robocorp Certified Python Automation Developer — Levels 1, 2 &amp; 3</h3></div>
+          </article>
+          <article class="edu-card">
+            <div class="edu-art a3"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.5 5.8 21l1.4-7L2 9.3l7-.8z"/></svg></div>
+            <div class="edu-body"><p class="mono-sm">Enigmatix Pvt Ltd <span>Award</span></p><h3>Certificate of Appreciation &amp; Achievement — Backend Developer &amp; Automation Engineer</h3></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer class="ftr" id="contact" data-theme="dark" data-scene="ribbons">
+    <div class="wrap">
+      <div class="ftr-top">
+        <div class="ftr-social">
+          <a href="#contact" data-mail aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+          <a href="https://www.linkedin.com/in/naimat-ullah-khan-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M11.5 17v-6.5M11.5 13.2c0-1.6 1.1-2.7 2.5-2.7s2.5 1 2.5 2.7V17"/></svg></a>
+          <a href="tel:+923010374488" aria-label="Phone"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a>
+          <a href="assets/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume PDF"><svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z M14 2v6h6 M9 13h6M9 17h6"/></svg></a>
+        </div>
+        <div class="ftr-cols">
+          <div><p class="ftr-h">Explore</p><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a></div>
+          <div><p class="ftr-h">Contact</p><a href="#contact" data-mail data-mail-text>Email</a><a href="tel:+923010374488">+92 301 0374488</a><a href="https://www.linkedin.com/in/naimat-ullah-khan-" target="_blank" rel="noopener noreferrer">LinkedIn — naimat-ullah-khan-</a><a href="assets/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a><span>Bahawalpur, Pakistan</span></div>
+        </div>
+      </div>
+      <div class="ftr-cta">
+        <h2 class="split h-cta">Let's automate the work that slows your team down — or just say hi.</h2>
+        <div class="btn-row">
+          <a class="btn btn-pink" href="#contact" data-mail><span class="btn-bg"></span><span class="scr">Email me</span></a>
+          <a class="btn btn-ghost" href="tel:+923010374488"><span class="btn-bg"></span><span class="scr">Call me</span></a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/naimat-ullah-khan-" target="_blank" rel="noopener noreferrer"><span class="btn-bg"></span><span class="scr">LinkedIn</span></a>
+        </div>
+      </div>
+      <div class="ftr-bottom">
+        <span>2026 © Naimat Ullah Khan</span>
+        <div><a href="#top"><span class="scr">Back to top</span></a><a href="assets/Naimat-Ullah-Khan-Resume.pdf" target="_blank" rel="noopener noreferrer"><span class="scr">Download resume</span></a></div>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<!-- ============ PROJECT MODAL ============ -->
+<dialog class="modal" id="modal">
+  <button class="modal-close" data-close aria-label="Close"><span class="scr">Close</span></button>
+  <div class="modal-body" id="modalBody"></div>
+</dialog>
+
+<script src="vendor/gsap/gsap.min.js"></script>
+<script src="vendor/lenis/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="vendor/three/three.classic.min.js"></script>
+<script src="vendor/three/three-addons.classic.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

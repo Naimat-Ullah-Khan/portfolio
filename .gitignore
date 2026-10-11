@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# never commit secrets (this site has none, keep it that way)
+.env
+.env.*
+*.pem
+*.key
+
+# logs / local tooling
+*.log
+node_modules/
